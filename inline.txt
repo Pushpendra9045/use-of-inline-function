@@ -1,0 +1,30 @@
+//Write a program of using inline function
+#include<iostream>
+using namespace std;
+//creating class name math
+class math
+{
+    public:
+    //creating function power
+    int power(int ,int );
+    };
+//making the function inline by giving suggestion
+inline int math :: power(int a,int b)
+{
+    int i,ans=1;
+    for(int i=0;i<=b;i++)
+    {
+        ans=ans*a;
+    }
+    return ans;
+    }
+int main()
+{
+    int result=0;
+    math p;
+    //calling the power function
+    result=p.power(7,4);
+    //displaying the output to the user
+    cout<<"The result of 7^4 is "<<result;
+    return 0;
+}
